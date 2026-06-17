@@ -1,0 +1,10 @@
+# Generated files
+*.vvp
+*.vcd
+*.png
+*.json
+*_synth.v
+
+# Backup files
+*~
+*.bak
