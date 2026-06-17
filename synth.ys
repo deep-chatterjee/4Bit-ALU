@@ -1,0 +1,27 @@
+# Read the design
+read_verilog alu_4bit.v
+
+# Check hierarchy
+hierarchy -check -top alu_4bit
+
+# Convert processes to gates
+proc
+opt
+
+# Flatten and optimize
+flatten
+opt
+
+# Technology mapping to generic gates
+techmap
+opt
+
+# Show statistics
+stat
+
+# Write outputs
+write_verilog alu_4bit_synth.v
+write_json alu_4bit.json
+
+# Generate schematic (needs Graphviz)
+show -prefix alu_4bit -format png
