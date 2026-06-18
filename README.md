@@ -78,7 +78,7 @@ Synthesized to a generic gate-level netlist — purely combinational, zero flip-
 
 **Gate-level Schematic (Yosys + Graphviz):**
 
-![Gate-level Schematic](alu_4bit.png)
+![Gate-level Schematic](images/alu_4bit.png)
 
 ---
 
@@ -86,7 +86,7 @@ Synthesized to a generic gate-level netlist — purely combinational, zero flip-
 
 **GTKWave Simulation:**
 
-![GTKWave Verification](4Bit_ALU_Verification.png)
+![GTKWave Verification](images/4Bit_ALU_Verification.png)
 
 The waveform shows all testbench signals across the full 652 ns simulation window — `a[3:0]`, `b[3:0]`, `op[2:0]`, `result[3:0]`, `cout`, `overflow`, `zero`, `negative`, and the running `passed`/`failed` counters tracking the exhaustive ADD and SUB sweeps.
 
